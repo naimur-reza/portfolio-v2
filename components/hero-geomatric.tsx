@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Pacifico } from "next/font/google";
 import Image from "next/image";
+import ConnectButtons from "./connect-buttons";
 
 const pacifico = Pacifico({
   subsets: ["latin"],
@@ -78,9 +79,9 @@ function ElegantShape({
 }
 
 export default function HeroGeometric({
-  badge = "Kokonut UI",
+  badge = "Coming soon...",
   title1 = "Elevate Your",
-  title2 = "Digital Vision",
+  title2 = "Naimur Reza",
 }: {
   badge?: string;
   title1?: string;
@@ -200,6 +201,15 @@ export default function HeroGeometric({
               Crafting exceptional digital experiences through innovative design
               and cutting-edge technology.
             </p>
+          </motion.div>
+
+          <motion.div
+            custom={3}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <ConnectButtons />
           </motion.div>
         </div>
       </div>
