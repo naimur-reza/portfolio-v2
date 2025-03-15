@@ -1,10 +1,10 @@
-import HeroGeometric from "@/components/hero-geomatric";
+import HeroGeometric from "@/components/HeroGeometric";
 
 const HomePage = () => {
   return (
-    <section>
+    <div className="space-y-24 md:space-y-28 lg:space-y-30">
       <HeroGeometric />
-    </section>
+    </div>
   );
 };
 

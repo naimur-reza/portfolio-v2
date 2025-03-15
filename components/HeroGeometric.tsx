@@ -4,7 +4,8 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Pacifico } from "next/font/google";
 import Image from "next/image";
-import ConnectButtons from "./connect-buttons";
+import ConnectButtons from "./ConnectButtons";
+import ShinyText from "./ui/shiny-text";
 
 const pacifico = Pacifico({
   subsets: ["latin"],
@@ -151,7 +152,7 @@ export default function HeroGeometric({
         />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 md:px-6">
+      <div className="relative z-10 container mx-auto px-4 md:px-6 pt-14">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             custom={0}
@@ -166,7 +167,7 @@ export default function HeroGeometric({
               width={20}
               height={20}
             />
-            <span className="text-sm text-white/60 tracking-wide">{badge}</span>
+            <ShinyText text={badge} />
           </motion.div>
 
           <motion.div

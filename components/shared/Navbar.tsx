@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="fixed z-10 top-5 w-full flex items-center justify-center">
       <ul
         className="border-white/10 bg-white/5 px-1.5 py-1 flex items-center justify-center space-x-5 rounded-full text-sm
-       text-accent-foreground"
+       text-accent-foreground backdrop-blur-md hidden md:block"
       >
         {options.map((option) => {
           const isActive = pathname === option.path;
